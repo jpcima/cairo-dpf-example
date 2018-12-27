@@ -27,7 +27,7 @@ ExampleUI::~ExampleUI()
 
 void ExampleUI::onDisplay()
 {
-    cairo_t *cr = getContext();
+    cairo_t *cr = getContext().cairo.graphics;
     cairo_set_source_rgb(cr, 1.0, 0.8, 0.5);
     cairo_paint(cr);
 }

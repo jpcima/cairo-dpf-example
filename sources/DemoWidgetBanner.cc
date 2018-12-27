@@ -42,7 +42,7 @@ DemoWidgetBanner::DemoWidgetBanner(Widget *group)
 
 void DemoWidgetBanner::onDisplay()
 {
-    cairo_t *cr = getContext();
+    cairo_t *cr = getContext().cairo.graphics;
 
     Point<int> pt = getAbsolutePos();
     Size<uint> sz = getSize();

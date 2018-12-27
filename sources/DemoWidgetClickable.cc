@@ -12,7 +12,7 @@ DemoWidgetClickable::DemoWidgetClickable(Widget *group)
 
 void DemoWidgetClickable::onDisplay()
 {
-    cairo_t *cr = getContext();
+    cairo_t *cr = getContext().cairo.graphics;
 
     Point<int> pt = getAbsolutePos();
     Size<uint> sz = getSize();
